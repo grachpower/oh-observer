@@ -1,1 +1,1 @@
-git pull && sh build.sh && deploy.sh
+git pull && sh build.sh && sh deploy.sh
