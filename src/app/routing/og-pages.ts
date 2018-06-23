@@ -34,7 +34,7 @@ ogPagesRouter.use('/:seshType', (req, res, next) => {
 });
 
 ogPagesRouter.get('/:seshType', (req, res) => {
-    // res.redirect('http://www.seshmefitness.com.au/');
+    res.redirect('http://www.seshmefitness.com.au/');
 
     const seshType = req.params.seshType;
 
