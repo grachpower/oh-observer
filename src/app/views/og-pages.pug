@@ -6,7 +6,35 @@ html
         meta(property='og:type' content=ogType)
         meta(property='og:image' content=ogImage)
         meta(property='og:description' content=ogDescription)
+        meta(property='og.follows')
+        meta(property='og.follows')
     body
-        //img(
-        //    src=ogImage
+        script
+            include og-pages.js
+
+        //div(
+        //    class="fb-login-button"
+        //    data-show-faces="true"
+        //    data-width="200"
+        //    data-max-rows="1"
+        //    data-scope="publish_actions"
         //)
+
+        //This example creates a story on Facebook using the
+        a(href="https://developers.facebook.com/docs/reference/ogaction/og.likes")
+
+        //that you like an
+        //<a href="http://techcrunch.com/2013/02/06/facebook-launches-developers-live-video-channel-to-keep-its-developer-ecosystem-up-to-date/">
+        //article on TechCrunch</a>.  The story should only
+        //be visible to you.
+        //</div>
+
+        input(
+            type="button"
+            value="Learn more"
+            onclick="postLike();"
+        )
+
+        div(
+            id="result"
+        )

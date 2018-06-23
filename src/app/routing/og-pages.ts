@@ -26,6 +26,7 @@ ogPagesRouter.use('/:seshType', (req, res, next) => {
             ogType: 'website',
             ogImage: getImageByType(seshType),
             ogDescription: 'SeshMe connects you with fitness professionals and other fitness enthusiasts to find and book your perfect outdoor fitness session. Download the app today and build your very own fitness community.',
+            ogFollow: '',
         });
     } else {
         next();
@@ -44,6 +45,7 @@ ogPagesRouter.get('/:seshType', (req, res) => {
         ogType: 'website',
         ogImage: `${getImageByType(seshType)}`,
         ogDescription: 'SeshMe connects you with fitness professionals and other fitness enthusiasts to find and book your perfect outdoor fitness session. Download the app today and build your very own fitness community.',
+        ogFollow: '',
     });
 });
 
