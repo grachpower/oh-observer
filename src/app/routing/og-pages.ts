@@ -21,7 +21,7 @@ ogPagesRouter.use('/:seshType', (req, res, next) => {
     if (isSocial) {
         res.render('og-pages', {
             title: 'Seshme',
-            ogUrl: 'http://www.seshmefitness.com.au/',
+            ogUrl: `${req.host}/seshType`,
             ogTitle: 'Find a sesh today',
             ogType: 'website',
             ogImage: getImageByType(seshType),
@@ -39,7 +39,7 @@ ogPagesRouter.get('/:seshType', (req, res) => {
 
     res.render('og-pages', {
         title: 'Seshme',
-        ogUrl: 'http://www.seshmefitness.com.au/',
+        ogUrl: `${req.host}/seshType`,
         ogTitle: 'Find a sesh today',
         ogType: 'website',
         ogImage: `${getImageByType(seshType)}`,
