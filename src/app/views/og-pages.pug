@@ -12,37 +12,11 @@ html
         script
             include og-pages.js
 
-        //div(
-        //    class="fb-login-button"
-        //    data-show-faces="true"
-        //    data-width="200"
-        //    data-max-rows="1"
-        //    data-scope="publish_actions"
-        //)
-
-        //This example creates a story on Facebook using the
-        a(href="https://developers.facebook.com/docs/reference/ogaction/og.likes")
-
-        //that you like an
-        //<a href="http://techcrunch.com/2013/02/06/facebook-launches-developers-live-video-channel-to-keep-its-developer-ecosystem-up-to-date/">
-        //article on TechCrunch</a>.  The story should only
-        //be visible to you.
-        //</div>
-
-        input(
-            type="button"
-            value="Learn more"
-            onclick="postLike();"
-        )
-
-        div(
-            id="result"
-        )
-
         div(
             class="fb-like"
-            data-share="true"
-            data-width="450"
+            data-href="https://www.your-domain.com/your-page.html"
+            data-layout="standard"
+            data-action="like"
             data-show-faces="true"
         )
 

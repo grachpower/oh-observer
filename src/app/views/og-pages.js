@@ -1,12 +1,6 @@
 // You probably don't want to use globals, but this is just example code
 var fbAppId = '279875379221772';
-var objectToLike = 'http://techcrunch.com/2013/02/06/facebook-launches-developers-live-video-channel-to-keep-its-developer-ecosystem-up-to-date/';
-
-// This check is just here to make sure you set your app ID. You don't
-// need to use it in production.
-if (fbAppId === '279875379221772') {
-    alert('Please set the fbAppId in the sample.');
-}
+var objectToLike = 'http://www.seshmefitness.com.au/';
 
 /*
  * This is boilerplate code that is used to initialize
@@ -37,9 +31,9 @@ window.fbAsyncInit = function() {
     js.src = "https://connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
 
-    setTimeout(function() {
-        window.location.href = 'http://www.seshmefitness.com.au/';
-    }, 0);
+    // setTimeout(function() {
+    //     window.location.href = 'http://www.seshmefitness.com.au/';
+    // }, 0);
 }(document, 'script', 'facebook-jssdk'));
 
 /*
