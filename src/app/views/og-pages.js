@@ -23,7 +23,7 @@ window.fbAsyncInit = function() {
                               // server to access the session
         xfbml      : true,     // parse page for xfbml or html5
         // social plugins like login button below
-        version     : 'v2.7',  // Specify an API version
+        version     : 'v3.0',  // Specify an API version
     });
 
     // Put additional init code here
@@ -36,7 +36,10 @@ window.fbAsyncInit = function() {
     js = d.createElement(s); js.id = id;
     js.src = "https://connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
-    window.location.href = 'http://www.seshmefitness.com.au/';
+
+    setTimeout(function() {
+        window.location.href = 'http://www.seshmefitness.com.au/';
+    }, 0);
 }(document, 'script', 'facebook-jssdk'));
 
 /*
