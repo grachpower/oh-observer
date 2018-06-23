@@ -6,10 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon",
-    "build": "npm run clean:dist && tsc ./src/**/*.ts --outDir dist && npm run size",
+    "build": "npm run clean:dist && tsc ./src/**/*.ts --outDir dist",
     "rimraf": "rimraf",
     "size": "size-limit",
-    "clean:dist": "npm run rimraf -- dist"
+    "clean:dist": "npm run rimraf -- dist",
+    "serve": "ts-node ./src/app/index.ts"
   },
   "repository": {
     "type": "git",
@@ -25,13 +26,17 @@
     "express": "^4.16.3",
     "jest": "^23.1.0",
     "nodemon": "^1.17.5",
+    "pug": "^2.0.3",
     "ts-node": "^7.0.0",
-    "typescript": "^2.9.2"
+    "typescript": "^2.9.2",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
   },
   "devDependencies": {
     "@types/express": "^4.16.0",
     "rimraf": "^2.6.2",
-    "size-limit": "^0.18.3"
+    "size-limit": "^0.18.3",
+    "ts-loader": "^4.4.1"
   },
   "jest": {
     "transform": {
@@ -49,7 +54,7 @@
   },
   "size-limit": [
     {
-      "path": "lib/*.js",
+      "path": "dist/*.js",
       "limit": "9 KB"
     }
   ]

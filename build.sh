@@ -1,0 +1,1 @@
+docker build -f "og.Dockerfile" -t "og-service:latest" .;
