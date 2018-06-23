@@ -36,6 +36,7 @@ window.fbAsyncInit = function() {
     js = d.createElement(s); js.id = id;
     js.src = "https://connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
+    window.location.href = 'http://www.seshmefitness.com.au/';
 }(document, 'script', 'facebook-jssdk'));
 
 /*
